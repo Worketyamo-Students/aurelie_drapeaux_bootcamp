@@ -1,0 +1,75 @@
+/*Declaration de variables*/
+:root{
+    --GreenColor:#15886E;
+    --RedColor:#8D0100;
+    --YellowColor:#FEE51F;
+
+    --FontSizeDefault:10px;
+}
+
+/*Initialisation*/
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;   
+}
+
+html{
+    font-size: var(--FontSizeDefault);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*traitement du drapeau du Cameroun*/
+.cadres{
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    display: flex;
+    animation: faireflotter 2s ease-in-out infinite;
+}
+
+@keyframes faireflotter {
+    0%{transform: rotate(0deg) translateY(0);
+    }
+    50%{
+        transform: rotate(0.5deg) translateY(-1rem);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0);
+    }   
+}
+
+.cadres .cadres__c{
+    flex:1;
+    width: 100%;
+    height: 100%;
+}
+
+.un{
+    background: repeating-conic-gradient(#33c008 0 25%, var(--GreenColor)  25% 50%);
+    background-size: 0.5rem 0.4rem;
+}
+
+.deux{
+    background: repeating-conic-gradient(#ff0e0e 0 25%, var(--RedColor) 25% 50%);
+    background-size: 0.5rem 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trois{
+    background: repeating-conic-gradient(#dfe211 0 25%, var(--YellowColor) 25% 50%);
+    background-size: 0.5rem 0.4rem;
+}
+
+ion-icon {
+  font-size: 20rem;
+  color: var(--YellowColor);
+}

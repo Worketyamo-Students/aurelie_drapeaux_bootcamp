@@ -18,20 +18,38 @@ html{
     font-size: var(--FontSizeDefault);
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
 /*traitement du drapeau du Japon*/
 .cercle{
-    background-color: var(--RedColor);
+    background: var(--RedColor);
     width: 40rem;
     height: 40rem;
     border-radius: 50%;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+.drapeau_j{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: repeating-conic-gradient(#ebe7e7 0 25%, var(--WhiteColor) 25% 50%);
+    background-size: 0.5rem 0.4rem;
+    animation: faireflotter 2s ease-in-out infinite;
 }
 
+@keyframes faireflotter {
+    0%{transform: rotate(0deg) translateY(0);
+    }
+    50%{
+        transform: rotate(0.5deg) translateY(-1rem);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0);
+    }   
+}

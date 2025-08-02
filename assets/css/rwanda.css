@@ -32,6 +32,18 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    animation: faireflotter 2s ease-in-out infinite;
+}
+
+@keyframes faireflotter {
+    0%{transform: rotate(0deg) translateY(0);
+    }
+    50%{
+        transform: rotate(0.5deg) translateY(-1rem);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0);
+    }   
 }
 
 .cadres__c{
@@ -40,7 +52,8 @@ body{
 }
 
 .un{
-    background-color: var(--BlueColor);
+    background: repeating-conic-gradient(#199aeb 0 25%, var(--BlueColor) 25% 50%);
+    background-size: 0.3rem 0.2rem;
     height: 80rem;
     width: 100%;
     display: flex;
@@ -54,9 +67,11 @@ body{
 }
 
 .deux{
-    background-color: var(--YellowColor);
+    background: repeating-conic-gradient(#dac239 0 25%, var(--YellowColor) 25% 50%);
+    background-size: 0.3rem 0.2rem;
 }
 
 .trois{
-    background-color: var(--GreenColor);
+    background: repeating-conic-gradient(#1db182 0 25%, var(--GreenColor) 25% 50%);
+    background-size: 0.3rem 0.2rem;
 }

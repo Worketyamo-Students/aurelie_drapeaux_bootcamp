@@ -35,14 +35,28 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    animation: faireflotter 2s ease-in-out infinite;
 }
+
+@keyframes faireflotter {
+    0%{transform: rotate(0deg) translateY(0);
+    }
+    50%{
+        transform: rotate(0.5deg) translateY(-1rem);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0);
+    }   
+}
+
 .cadres__{
     width: 100%;
     height: 20rem;
 }
 
 .un{
-    background:var(--BlueColor) ;
+    background: repeating-conic-gradient(#033792 0 25%, var(--BlueColor) 25% 50%);
+    background-size: 0.5rem 0.4rem;
     display: flex;
 }
 
@@ -56,7 +70,8 @@ body{
 .cadre__b{
     width:20rem;
     height:100%;
-    background:var(--RedColor);
+    background: repeating-conic-gradient(#ee183f 0 25%, var(--RedColor) 25% 50%);
+    background-size: 0.5rem 0.4rem;
 }
 
 ion-icon {
@@ -65,7 +80,8 @@ ion-icon {
 }
 
 .deux{
-    background: var(--WhiteColor);
+    background: repeating-conic-gradient(#ebe7e7 0 25%, var(--WhiteColor) 25% 50%);
+    background-size: 0.5rem 0.4rem;
     display: flex;
 }
 
@@ -76,12 +92,14 @@ ion-icon {
 }
 
 .trois{
-    background: var(--GreenColor);
+    background: repeating-conic-gradient(#1cc01c 0 25%, var(--GreenColor) 25% 50%);
+    background-size: 0.5rem 0.4rem;
     display: flex;
 }
 
 .quatre{
-    background: var(--YellowColor);
+    background: repeating-conic-gradient(#ebc42c 0 25%, var(--YellowColor) 25% 50%);
+    background-size: 0.5rem 0.4rem;
     display: flex;
 }
 
