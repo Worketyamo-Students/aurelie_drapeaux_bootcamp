@@ -1,0 +1,62 @@
+/*Declaration de variables*/
+:root{
+    --BlueColor:#2084C2;
+    --YellowColor:#F8D61D;
+    --GreenColor:#0E7C59;
+
+    --FontSizeDefault:10px;
+}
+
+/*Initialisation*/
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;   
+}
+
+html{
+    font-size: var(--FontSizeDefault);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*traitement du drapeau du rwanda*/
+.cadres{
+    background: brown;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadres__c{
+    width: 100%;
+    height: 40rem;
+}
+
+.un{
+    background-color: var(--BlueColor);
+    height: 80rem;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding-right: 6rem;
+}
+
+.un img{
+    width: 25rem;
+}
+
+.deux{
+    background-color: var(--YellowColor);
+}
+
+.trois{
+    background-color: var(--GreenColor);
+}

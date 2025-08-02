@@ -1,0 +1,89 @@
+/*Declaration de variables*/
+:root{
+    --BlueColor:#003082;
+    --WhiteColor:#FFFFFF;
+    --GreenColor:#289728;
+    --YellowColor:#FFCE00;
+    --RedColor:#D21034;
+
+
+    --FontSizeDefault:10px;
+}
+
+/*Initialisation*/
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;   
+}
+
+html{
+    font-size: var(--FontSizeDefault);
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*traitement du drapeau de la centrafrique*/
+.cadres{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cadres__{
+    width: 100%;
+    height: 20rem;
+}
+
+.un{
+    background:var(--BlueColor) ;
+    display: flex;
+}
+
+.un .cadre__a{
+    background:transparent;
+    height: 100%;
+    width: 55rem;
+    padding-left: 13rem;
+}
+
+.cadre__b{
+    width:20rem;
+    height:100%;
+    background:var(--RedColor);
+}
+
+ion-icon {
+  font-size: 15rem;
+  color: var(--YellowColor);
+}
+
+.deux{
+    background: var(--WhiteColor);
+    display: flex;
+}
+
+.cadre__c{/*utilises par les 3 dernieres lignes du drapeaux*/
+   background:transparent;
+   height: 100%;
+   width: 55rem; 
+}
+
+.trois{
+    background: var(--GreenColor);
+    display: flex;
+}
+
+.quatre{
+    background: var(--YellowColor);
+    display: flex;
+}
+
+
+

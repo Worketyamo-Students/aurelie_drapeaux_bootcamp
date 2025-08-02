@@ -1,0 +1,37 @@
+/*Declaration de variables*/
+:root{
+    --WhiteColor:#FFFFFF;
+    --RedColor:#BC002D;
+
+    --FontSizeDefault:10px;
+}
+
+/*Initialisation*/
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;   
+}
+
+html{
+    font-size: var(--FontSizeDefault);
+}
+
+/*traitement du drapeau du Japon*/
+.cercle{
+    background-color: var(--RedColor);
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

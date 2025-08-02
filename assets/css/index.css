@@ -1,0 +1,60 @@
+/*Declaration de variables*/
+:root{
+    --GreenColor:#15886E;
+    --RedColor:#8D0100;
+    --YellowColor:#FEE51F;
+
+    --FontSizeDefault:10px;
+}
+
+/*Initialisation*/
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;   
+}
+
+html{
+    font-size: var(--FontSizeDefault);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*traitement du drapeau du Cameroun*/
+.cadres{
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    display: flex;
+}
+
+.cadres .cadres__c{
+    flex:1;
+    width: 100%;
+    height: 100%;
+}
+
+.un{
+    background: var(--GreenColor);
+}
+
+.deux{
+    background: var(--RedColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trois{
+    background: var(--YellowColor);
+}
+
+ion-icon {
+  font-size: 20rem;
+  color: var(--YellowColor);
+}
